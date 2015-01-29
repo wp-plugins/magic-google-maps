@@ -64,7 +64,7 @@ The Google Maps does not require an API key to function correctly. However read 
 To bee added once SVN  is granted
 
 == Changelog ==
-= 1.0.0 =
+= 1.0.1 =
 *JS path fix
 = 1.0.0 =
 *First release
