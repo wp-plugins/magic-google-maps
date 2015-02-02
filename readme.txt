@@ -8,7 +8,8 @@ Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Google maps quickly and easily to your page. Light weight plugin optimised for speed.
+Add Google maps quickly and easily to your page. 
+Light weight plugin optimised for speed.
 
 == Description ==
 
@@ -18,7 +19,7 @@ Plugin setup is quick, easy and very intuitive and it does not require Google ma
 
 Adding google map to your page never was easer. Just instal and activate plugin, go to settings page, zoom in map, drag pin to desired location and hit save. Copy [map] and paste on the the page where you want it to appear.
 
-Width of the Google maps will adjust automatically to the with of the page.
+Width of the Google maps will adjust automatically to the size of the page.
 
 == Installation ==
 
