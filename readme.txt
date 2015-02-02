@@ -14,7 +14,11 @@ Add Google maps quickly and easily to your page. Light weight plugin optimised f
 
 This plugin is created to do one thing and one thing only, that is why it is fast and does not affect badly loading speed of your website.
 
-Plugin setup is quick, easy and very intuitive.
+Plugin setup is quick, easy and very intuitive and it does not require Google maps activation key. Google maps activation key is an optional field.
+
+Adding google map to your page never was easer. Just instal and activate plugin, go to settings page, zoom in map, drag pin to desired location and hit save. Copy [map] and paste on the the page where you want it to appear.
+
+Width of the Google maps will adjust automatically to the size of the page.
 
 == Installation ==
 
