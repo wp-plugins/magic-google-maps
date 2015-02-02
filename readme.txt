@@ -66,7 +66,7 @@ The Google Maps does not require an API key to function correctly. However read 
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1
+1. This screen shot description corresponds to screenshot-1-magic-google-maps.jpg
 
 == Changelog ==
 
