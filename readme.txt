@@ -1,7 +1,7 @@
 === Magic Google Maps ===
 Contributors: Bartosz Fengler
 Donate link: http://magicpluginfactory.com
-Tags: Google maps, location, contact page map, shortcode map, google maps for Wordpress, quick setup, easy setup
+Tags: google maps, google map, location, contact page map, shortcode map, google maps for wordpress, quick setup, easy setup, google maps wordpress, google map wordpress, google maps plugin, google maps wordpress plugin, google map wordpress plugin, wp google maps, wp google map,simple google maps, simple google maps plugin, simple google map plugin
 Requires at least: 4.0.1
 Tested up to: 4.1
 Stable tag: 4.1
