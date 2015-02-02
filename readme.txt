@@ -1,7 +1,7 @@
 === Magic Google Maps ===
 Contributors: Bartosz Fengler
-Donate link: http://magicpluginfactory.com
-Tags: Google maps, location, contact page map, shortcode map, google maps for Wordpress, quick setup, easy setup
+Created by: http://magicpluginfactory.com
+Tags: Google maps, location, contact page map, shortcode map, google maps for Wordpress, quick setup, easy setup, google map
 Requires at least: 4.0.1
 Tested up to: 4.1
 Stable tag: 4.1
@@ -14,7 +14,11 @@ Add Google maps quickly and easily to your page. Light weight plugin optimised f
 
 This plugin is created to do one thing and one thing only, that is why it is fast and does not affect badly loading speed of your website.
 
-Plugin setup is quick, easy and very intuitive.
+Plugin setup is quick, easy and very intuitive and it does not require Google maps activation key. Google maps activation key is an optional field.
+
+Adding google map to your page never was easer. Just instal and activate plugin, go to settings page, zoom in map, drag pin to desired location and hit save. Copy [map] and paste on the the page where you want it to appear.
+
+Width of the Google maps will adjust automatically to the with of the page.
 
 == Installation ==
 
@@ -48,11 +52,11 @@ Plugin setup is quick, easy and very intuitive.
 
 == Frequently Asked Questions ==
 
-= 1. Where do I find settings page =
+= 1. Where do I find Magic Google Maps settings page =
 
 Magic Google Maps settings page is located in the left menu bar under Magic Maps
 
-= 2. Why after deleting plugin and installing it once again all my settings are gone? =
+= 2. Why after deleting Magic Google maps and installing it once again all my settings are gone? =
 
 To keep your database clean, Magic Google Maps remove all entries in database when you delete plugin. If you want to deactivate plugin for some reason, all your data will be kept save.
 
@@ -61,7 +65,7 @@ To keep your database clean, Magic Google Maps remove all entries in database wh
 The Google Maps does not require an API key to function correctly. However read more information [Google Maps API] (https://developers.google.com/maps/signup)
 
 == Screenshots ==
-To bee added once SVN  is granted
+.
 
 == Changelog ==
 = 1.0.1 =
