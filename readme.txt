@@ -65,7 +65,8 @@ To keep your database clean, Magic Google Maps remove all entries in database wh
 The Google Maps does not require an API key to function correctly. However read more information [Google Maps API] (https://developers.google.com/maps/signup)
 
 == Screenshots ==
-To bee added once SVN  is granted
+
+1. This screen shot description corresponds to screenshot-1
 
 == Changelog ==
 
