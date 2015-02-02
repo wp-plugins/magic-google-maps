@@ -8,7 +8,7 @@ Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Google maps quickly and easily to your page. Light weight plugin optimised for speed.
+Add Google maps quickly and easily to your page. Magic Goole maps is light weight plugin optimised for speed. It allows you to add Google map toy your page with shortcode [map].
 
 == Description ==
 
@@ -16,7 +16,7 @@ This plugin is created to do one thing and one thing only, that is why it is fas
 
 Plugin setup is quick, easy and very intuitive and it does not require Google maps activation key. Google maps activation key is an optional field.
 
-Adding google map to your page never was easer. Just instal and activate plugin, go to settings page, zoom in map, drag pin to desired location and hit save. Copy [map] and paste on the the page where you want it to appear.
+Adding google map to your page never was easer. Just install and activate plugin, go to settings page, zoom in map, drag pin to desired location and hit save. Copy [map] and paste on the the page where you want it to appear.
 
 Width of the Google maps will adjust automatically to the size of the page.
 
