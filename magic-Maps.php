@@ -3,7 +3,7 @@
  * Plugin Name: Magic Google Maps
  * Plugin URI: http://www.magicpluginfactory.com/
  * Description: Add Google maps quickly and easly to your page. Light weight plugin optymized for speed.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Magic Plugin Factory
  * Author URI: http://www.magicpluginfactory.com/
  * License: GPL2
@@ -83,6 +83,12 @@ add_action("admin_menu", "bf_add_map_page");
 //---------------------------------------------------
 
 function bf_initialize_map_options(){
+	add_settings_section(
+						"googleMapsSection",		
+						"Google Maps Options Section",
+						"google_maps_section",		
+						"magicmaps"					
+						);
 	 add_settings_field(
 	 					"height", 			//(string) (required) String for use in the 'id' attribute of tags.
 	 					"Height of the Map", 			//(string) (required) Title of the field.
@@ -97,21 +103,14 @@ function bf_initialize_map_options(){
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
 	 					);
-	add_settings_section(
-						"googleMapsSection",		
-						"Google Maps Options Section",
-						"google_maps_section",		
-						"magicmaps"					
-						);
-	
 	 add_settings_field(
-	 					"googlemapsCode", 			
-	 					"Google Maps API Code", 	
-	 					"google_maps_code", 		
-	 					"magicmaps" ,				
-	 					"googleMapsSection"			
+	 					"zoom", 			
+	 					"Zoom of the Map", 
+	 					"zoom", 			
+	 					"magicmaps" ,					
+	 					"googleMapsSection"				
 	 					);
-	 					
+	
 	 add_settings_field(
 	 					"googlemapsLat", 			
 	 					"Google Maps Lat", 			
@@ -140,14 +139,12 @@ function bf_initialize_map_options(){
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
 	 					);
-	
-	
-	  add_settings_field(
-	 					"zoom", 			
-	 					"Zoom of the Map", 
-	 					"zoom", 			
-	 					"magicmaps" ,					
-	 					"googleMapsSection"				
+	 add_settings_field(
+	 					"googlemapsCode", 			
+	 					"Google Maps API Code", 	
+	 					"google_maps_code", 		
+	 					"magicmaps" ,				
+	 					"googleMapsSection"			
 	 					);
 	 register_setting(
 	 					"googleMapsSection",			//(string) (required) A settings group name. Must exist prior to the register_setting call. This must match the group name in settings_fields()
@@ -195,12 +192,12 @@ function bf_map_settings_page(){
       
 	  <div id="map-canvas1"></div>
 	  <form method="post" action="options.php">
-	    <?php
+	    <?
 	     settings_fields('googleMapsSection');?>
 	       <br/> <p class="description">Drag and drop pin to desire location zoom in and out to set preferred view  and save.<br/> 
 	      Remember to set the height of the map width will adjust automaticaly.<br/>
 	      Copy and paste code to your contact page:  <span style="font-size: 1.2em; background: #ffffff; padding: 5px 10px; margin:10px; line-height: 2.8em; border: 1px solid #5b9dd9;box-shadow: 0 0 2px rgba(30,140,190,.8);"><b> [map]</b></span>
-	      </p><?php
+	      </p><?
 	     submit_button();
 	     do_settings_sections('magicmaps');
 	     submit_button();
@@ -208,7 +205,7 @@ function bf_map_settings_page(){
 	    ?>
     </form>
     </div>
-   <?php
+   <?
  	
 }
 
@@ -218,6 +215,7 @@ function google_maps_section(){
 function google_maps_code(){
 	$option_API_key = get_option('googlemapsCode');	
 	echo '<input type="text" name="GoogleMapsCode" id="GoogleMapsCode" value="'.  $option_API_key .'" > ';
+	echo "Optional";
 }
 function google_maps_lat(){
 	$option_Map_Lat = get_option('googlemapsLat', '1');					
@@ -311,4 +309,3 @@ Function bf_pass_data_to_script_admin_map(){
 	wp_enqueue_script( 'magic-maps' );
 }
 add_action( 'admin_enqueue_scripts', 'bf_pass_data_to_script_admin_map' );
-?>
