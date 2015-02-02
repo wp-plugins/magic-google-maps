@@ -68,7 +68,6 @@ The Google Maps does not require an API key to function correctly. However read 
 
 1. Magic Google maps settings page:
 
- screenshot-1.png
 
 == Changelog ==
 
