@@ -8,7 +8,7 @@ Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Google maps quickly and easily to your page. Magic Goole maps is light weight plugin optimised for speed. Add Google map toy your page with [map].
+Add Google maps quickly and easily to your page. Magic Goole maps is light weight plugin optimised for speed. Add Google map to your page with [map].
 
 == Description ==
 
