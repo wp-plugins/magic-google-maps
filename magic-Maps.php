@@ -3,7 +3,7 @@
  * Plugin Name: Magic Google Maps
  * Plugin URI: http://www.magicpluginfactory.com/
  * Description: Add Google maps quickly and easly to your page. Light weight plugin optymized for speed.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Magic Plugin Factory
  * Author URI: http://www.magicpluginfactory.com/
  * License: GPL2
@@ -97,6 +97,13 @@ function bf_initialize_map_options(){
 	 					"googleMapsSection"				//(string) (optional) The section of the settings page in which to show the box (default or a section you added with add_settings_section(), look at the page in the source to see what the existing ones are.) Default: default
 	 					);
 	 add_settings_field(
+	 					"enabledescryption", 
+	 					"Enable Descryption", 		
+	 					"enable_descryption", 		
+	 					"magicmaps" ,				
+	 					"googleMapsSection"			
+	 					);
+	 add_settings_field(
 	 					"placedescryption", 
 	 					"Descryption", 		
 	 					"place_descryption", 		
@@ -146,6 +153,7 @@ function bf_initialize_map_options(){
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
 	 					);
+	 
 	 register_setting(
 	 					"googleMapsSection",			//(string) (required) A settings group name. Must exist prior to the register_setting call. This must match the group name in settings_fields()
 	 					"Height"				//(string) (required) A settings group name. Must exist prior to the register_setting call. This must match the group name in settings_fields()
@@ -173,6 +181,10 @@ function bf_initialize_map_options(){
 	 register_setting(
 	 					"googleMapsSection",			
 	 					"PlaceDescryption"				
+	 );
+	 register_setting(
+	 					"googleMapsSection",			
+	 					"EnableDescryption"				
 	 );
 	 register_setting(
 	 					"googleMapsSection",			
@@ -237,6 +249,12 @@ function place_descryption(){
 			$option_descryption = get_option('placedescryption');			
 	echo '<textarea rows="6" cols="30" name="PlaceDescryption" id="PlaceDescryption" value="" >'.  $option_descryption .'</textarea>';
 }
+function enable_descryption(){
+			$enable_descryption = get_option('enabledescryption');			
+			$html = '<input type="checkbox" id="EnableDescryption" name="EnableDescryption" value="1"'.checked( 1, $enable_descryption['EnableDescryption'], false ) .' />';
+		    $html .= '<label for="checkbox_example">Display or hide Info window</label>';
+		    echo $html;
+}
 function height(){
 			$option_height = get_option('height','200px');			
 	echo '<input type="text" name="Height" id="Height" value="'.  $option_height .'" >';
@@ -285,7 +303,8 @@ Function pass_data_to_script(){
 	    'option_Pin_Lat' => get_option('googlemapspinLat'),
 	    'option_Pin_lng' => get_option('googlemapspinLng'),
 	    'option_descryption' => get_option('placedescryption'),
-	    'option_zoom' => get_option('zoom')
+	    'option_zoom' => get_option('zoom'),
+	    'enable_descryption' => get_option('enabledescryption')
 	);
 	
 	wp_localize_script( 'magic-maps', 'scriptParams', $script_params );
@@ -302,7 +321,8 @@ Function bf_pass_data_to_script_admin_map(){
 	    'option_Pin_Lat' => get_option('googlemapspinLat'),
 	    'option_Pin_lng' => get_option('googlemapspinLng'),
 	    'option_descryption' => get_option('placedescryption'),
-	    'option_zoom' => get_option('zoom')
+	    'option_zoom' => get_option('zoom'),
+	    'enable_descryption' => get_option('enabledescryption')
 	);
 
 	wp_localize_script( 'magic-maps', 'scriptParams', $script_params );

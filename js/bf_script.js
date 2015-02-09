@@ -19,7 +19,9 @@
   var infowindow = new google.maps.InfoWindow({
       content: contentString
   });
-
+  var enableInfowindow = scriptParams.enable_descryption;
+  
+ 
   var marker = new google.maps.Marker({
 	  
 	position: {
@@ -28,10 +30,12 @@
   	},
     map: map
   });
-  
+  if (enableInfowindow =="1" ){
   infowindow.open(map,marker);
-
-   google.maps.event.addListener(marker, 'click', function()  {
+  }
+   /*
+google.maps.event.addListener(marker, 'click', function()  {
     infowindow.open(map,marker);
   });
+*/
 }(window, google));

@@ -62,7 +62,7 @@ To keep your database clean, Magic Google Maps remove all entries in database wh
 
 = 3. Do I need Google Maps API key? =
 
-The Google Maps does not require an API key to function correctly. However read more information [Google Maps API] (https://developers.google.com/maps/signup)
+The Google Maps does not require an API key to function correctly. However if you would like to find more about Google maps API read this [Google Maps API] (https://developers.google.com/maps/signup)
 
 == Screenshots ==
 
@@ -70,6 +70,9 @@ The Google Maps does not require an API key to function correctly. However read 
 
 
 == Changelog ==
+
+= 1.0.2 =
+* New option added to disable or enable infowindow Google maps 
 
 = 1.0.1 =
 * Google maps key is optional and do not affect working of the plugin, see link to google maps in FAQ nr.3
