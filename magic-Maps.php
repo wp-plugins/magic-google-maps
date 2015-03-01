@@ -3,7 +3,7 @@
  * Plugin Name: Magic Google Maps
  * Plugin URI: http://www.magicpluginfactory.com/
  * Description: Add Google maps quickly and easly to your page. Light weight plugin optymized for speed.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Magic Plugin Factory
  * Author URI: http://www.magicpluginfactory.com/
  * License: GPL2
@@ -16,9 +16,11 @@ function magic_maps_activate() {
     add_option( 'googleMapsLng', '1' );
     add_option( 'googlemapspinLat', '1' );
     add_option( 'googlemapspinLng', '1' );
-    add_option( 'placedescryption', 'Your text' );
+    add_option( 'placedescription', 'Your text' );
     add_option( 'height', '350px' );
     add_option( 'zoom', '1' );
+    add_option('enabledescription', '1');
+
    
     
 }
@@ -97,16 +99,16 @@ function bf_initialize_map_options(){
 	 					"googleMapsSection"				//(string) (optional) The section of the settings page in which to show the box (default or a section you added with add_settings_section(), look at the page in the source to see what the existing ones are.) Default: default
 	 					);
 	 add_settings_field(
-	 					"enabledescryption", 
-	 					"Enable Descryption", 		
-	 					"enable_descryption", 		
+	 					"enabledescription", 
+	 					"Enable description", 		
+	 					"enable_description", 		
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
 	 					);
 	 add_settings_field(
-	 					"placedescryption", 
-	 					"Descryption", 		
-	 					"place_descryption", 		
+	 					"placedescription", 
+	 					"description", 		
+	 					"place_description", 		
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
 	 					);
@@ -180,11 +182,11 @@ function bf_initialize_map_options(){
 	 );		
 	 register_setting(
 	 					"googleMapsSection",			
-	 					"PlaceDescryption"				
+	 					"Placedescription"				
 	 );
 	 register_setting(
 	 					"googleMapsSection",			
-	 					"EnableDescryption"				
+	 					"Enabledescription"				
 	 );
 	 register_setting(
 	 					"googleMapsSection",			
@@ -204,7 +206,7 @@ function bf_map_settings_page(){
       
 	  <div id="map-canvas1"></div>
 	  <form method="post" action="options.php">
-	    <?
+	    <?php
 	     settings_fields('googleMapsSection');?>
 	       <br/> <p class="description">Drag and drop pin to desire location zoom in and out to set preferred view  and save.<br/> 
 	      Remember to set the height of the map width will adjust automaticaly.<br/>
@@ -245,13 +247,13 @@ function google_maps_pin_lng(){
 			$option_Pin_lng = get_option('googlemapspinLng', '1');			
 	echo '<input type="text" name="GoogleMapsPinLng" id="GoogleMapsPinLng" value="'.  $option_Pin_lng .'" > ';
 }
-function place_descryption(){
-			$option_descryption = get_option('placedescryption');			
-	echo '<textarea rows="6" cols="30" name="PlaceDescryption" id="PlaceDescryption" value="" >'.  $option_descryption .'</textarea>';
+function place_description(){
+			$option_description = get_option('placedescription');			
+	echo '<textarea rows="6" cols="30" name="Placedescription" id="Placedescription" value="" >'.  $option_description .'</textarea>';
 }
-function enable_descryption(){
-			$enable_descryption = get_option('enabledescryption');			
-			$html = '<input type="checkbox" id="EnableDescryption" name="EnableDescryption" value="1"'.checked( 1, $enable_descryption['EnableDescryption'], false ) .' />';
+function enable_description(){
+			$enable_description = get_option('enabledescription');			
+			$html = '<input type="checkbox" id="Enabledescription" name="Enabledescription" value="1"'.checked( 1, $enable_description['Enabledescription'], false ) .' />';
 		    $html .= '<label for="checkbox_example">Display or hide Info window</label>';
 		    echo $html;
 }
@@ -302,9 +304,9 @@ Function pass_data_to_script(){
 	    'option_Map_lng' => get_option('googleMapsLng'),
 	    'option_Pin_Lat' => get_option('googlemapspinLat'),
 	    'option_Pin_lng' => get_option('googlemapspinLng'),
-	    'option_descryption' => get_option('placedescryption'),
+	    'option_description' => get_option('placedescription'),
 	    'option_zoom' => get_option('zoom'),
-	    'enable_descryption' => get_option('enabledescryption')
+	    'enable_description' => get_option('enabledescription')
 	);
 	
 	wp_localize_script( 'magic-maps', 'scriptParams', $script_params );
@@ -320,9 +322,9 @@ Function bf_pass_data_to_script_admin_map(){
 	    'option_Map_lng' => get_option('googleMapsLng'),
 	    'option_Pin_Lat' => get_option('googlemapspinLat'),
 	    'option_Pin_lng' => get_option('googlemapspinLng'),
-	    'option_descryption' => get_option('placedescryption'),
+	    'option_description' => get_option('placedescription'),
 	    'option_zoom' => get_option('zoom'),
-	    'enable_descryption' => get_option('enabledescryption')
+	    'enable_description' => get_option('enabledescription')
 	);
 
 	wp_localize_script( 'magic-maps', 'scriptParams', $script_params );

@@ -15,7 +15,7 @@
   // map
   map = new google.maps.Map(element, options);
 
-  var contentString = scriptParams.option_descryption;
+  var contentString = scriptParams.option_description;
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString

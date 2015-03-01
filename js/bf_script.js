@@ -15,11 +15,11 @@
   // map
   map = new google.maps.Map(element, options);
 
-  var contentString = scriptParams.option_descryption;
+  var contentString = scriptParams.option_description;
   var infowindow = new google.maps.InfoWindow({
       content: contentString
   });
-  var enableInfowindow = scriptParams.enable_descryption;
+  var enableInfowindow = scriptParams.enable_description;
   
  
   var marker = new google.maps.Marker({

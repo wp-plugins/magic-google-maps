@@ -1,5 +1,5 @@
 === Magic Google Maps ===
-Contributors: Bartosz Fengler
+Contributors: Fengler
 Donate link: http://magicpluginfactory.com
 Tags: google maps, google map, location, contact page map, shortcode map, google maps for wordpress, quick setup, easy setup, google maps wordpress, google map wordpress, google maps plugin, google maps wordpress plugin, google map wordpress plugin, wp google maps, wp google map,simple google maps, simple google maps plugin, simple google map plugin
 Requires at least: 4.0.1
@@ -70,6 +70,9 @@ The Google Maps does not require an API key to function correctly. However if yo
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Typo and cosmetic changes on Magic Google maps settings page. 
 
 = 1.0.2 =
 * New option added to disable or enable infowindow Google maps 
