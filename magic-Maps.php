@@ -3,7 +3,7 @@
  * Plugin Name: Magic Google Maps
  * Plugin URI: http://www.magicpluginfactory.com/
  * Description: Add Google maps quickly and easly to your page. Light weight plugin optymized for speed.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Magic Plugin Factory
  * Author URI: http://www.magicpluginfactory.com/
  * License: GPL2
@@ -211,7 +211,7 @@ function bf_map_settings_page(){
 	       <br/> <p class="description">Drag and drop pin to desire location zoom in and out to set preferred view  and save.<br/> 
 	      Remember to set the height of the map width will adjust automaticaly.<br/>
 	      Copy and paste code to your contact page:  <span style="font-size: 1.2em; background: #ffffff; padding: 5px 10px; margin:10px; line-height: 2.8em; border: 1px solid #5b9dd9;box-shadow: 0 0 2px rgba(30,140,190,.8);"><b> [map]</b></span>
-	      </p><?
+	      </p><?php
 	     submit_button();
 	     do_settings_sections('magicmaps');
 	     submit_button();
@@ -219,7 +219,7 @@ function bf_map_settings_page(){
 	    ?>
     </form>
     </div>
-   <?
+   <?php
  	
 }
 
@@ -253,7 +253,7 @@ function place_description(){
 }
 function enable_description(){
 			$enable_description = get_option('enabledescription');			
-			$html = '<input type="checkbox" id="Enabledescription" name="Enabledescription" value="1"'.checked( 1, $enable_description['Enabledescription'], false ) .' />';
+			$html = '<input type="checkbox" name="Enabledescription" value="1" '. checked( $enable_description , 1 , false) .' />';
 		    $html .= '<label for="checkbox_example">Display or hide Info window</label>';
 		    echo $html;
 }

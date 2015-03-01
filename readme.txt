@@ -71,6 +71,9 @@ The Google Maps does not require an API key to function correctly. However if yo
 
 == Changelog ==
 
+= 1.0.4 =
+* Checkbox fix on  Magic Google maps settings page. 
+
 = 1.0.3 =
 * Typo and cosmetic changes on Magic Google maps settings page. 
 
