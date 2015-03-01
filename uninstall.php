@@ -10,3 +10,4 @@ delete_option( 'googlemapspinLng' );
 delete_option( 'placedescryption' );
 delete_option( 'zoom' );
 delete_option( 'height' );
+delete_option( 'enabledescription' );

@@ -107,7 +107,7 @@ function bf_initialize_map_options(){
 	 					);
 	 add_settings_field(
 	 					"placedescription", 
-	 					"description", 		
+	 					"Description", 		
 	 					"place_description", 		
 	 					"magicmaps" ,				
 	 					"googleMapsSection"			
