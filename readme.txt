@@ -28,7 +28,7 @@ Width of the Google maps will adjust automatically to the size of the page.
 2. Search for 'Magic Google Maps'
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
-5. Go to Magic Maps to configure the plugin
+5. Go to Magic Google Maps to configure the plugin
 6. Paste *[map]* shortcode code into page
 
 **Uploading in WordPress Dashboard**
@@ -38,16 +38,16 @@ Width of the Google maps will adjust automatically to the size of the page.
 3. Select magic-google-maps.zip from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
-6. Go to Magic Maps to configure the plugin
+6. Go to Magic Google Maps to configure the plugin
 7. Paste *[map]* shortcode code into page
 
 **Using FTP**
 
 1. Download magic-google-maps.zip
 2. Extract the magic-google-maps.zip directory to your computer
-3. Upload the magic-Maps directory to the /wp-content/plugins/ directory
+3. Upload the magic—google-maps directory to the /wp-content/plugins/ directory
 4. Activate the plugin in the Plugin dashboard
-5. Go to Magic Maps to configure the plugin
+5. Go to Magic Google Maps to configure the plugin
 6. Paste *[map]* shortcode code into page
 
 == Frequently Asked Questions ==
